@@ -1,0 +1,24 @@
+1.
+CREATE DATABASE assignment9;
+
+2.
+USE assignment9;
+
+3.
+DROP TABLE IF EXISTS 'moviestb';
+
+4.
+CREATE TABLE 'moviestb' (
+  'movieID' int NOT NULL,
+  'movieName' varchar(20) NOT NULL,
+  'TotalBusinessDone' double(12,2) DEFAULT NULL,
+  'rating' double(4,2) DEFAULT NULL,
+  'releaseDate' date DEFAULT NULL,
+  'language' varchar(10) DEFAULT NULL,
+  'movieType' varchar(20) DEFAULT NULL,
+  'movieCast' varchar(50) DEFAULT NULL,
+  PRIMARY KEY ('movieID')
+);
+
+5.
+INSERT INTO 'moviestb' VALUES (1,'movie1',100.00,7.00,'2000-01-21','english','family','john, tim'),(2,'movie2',514.00,8.50,'2005-05-05','english','drama','emily, leo, mark'),(3,'movie3',87.00,6.00,'2000-04-11','Hindi','action','victor'),(4,'movie4',225.00,7.70,'2012-12-12','Marathi','family','kartik, kritika, kabir'),(5,'movie5',66.00,5.00,'2011-06-12','Hindi','drama','kunal, kartik'),(6,'movie6',700.45,8.70,'2014-08-19','english','thriller-scifi','dom, ritik, illeana');
